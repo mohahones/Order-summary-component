@@ -1,0 +1,118 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-image: url(images/pattern-background-mobile.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    max-width: 320px;
+    background-color: white;
+    border-radius: 15px;
+    font-family: 'Red Hat Display';
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.img-details {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+}
+
+.img-details h3 {
+    font-weight: 900;
+}
+
+.img-details p {
+    padding: 0 14%;
+    line-height: 1.5;
+}
+
+div.img-details img {
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+}
+
+.pric {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+p {
+    color: hsl(224, 23%, 55%);
+    font-size: 14px;
+}
+
+.pric a {
+    color: hsl(245, 75%, 52%);
+    font-size: 13px;
+    padding-left: 5%;
+    font-weight: 900;
+}
+.pric a:hover{
+    text-decoration: none;
+    color: hsla(245, 75%, 52%, 0.8);
+}
+.payment {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 5%;
+}
+
+button {
+    white-space: nowrap;
+    padding: 10% 55%;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.payment button:first-child {
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    font-weight: 600;
+    box-shadow: 0 10px 30px -5px hsla(245, 75%, 52%, 0.5);
+}
+
+.payment button:last-child {
+    color: hsl(224, 23%, 55%);
+}
+
+.payment button:first-child:hover {
+    background-color: hsla(245, 75%, 52%, 0.8);
+    cursor: pointer;
+}
+
+.payment button:last-child:hover {
+    color: black;
+    cursor: pointer;
+}
+/* media queries */
+@media (min-width:920px){
+    body{
+        background-color:  hsl(225, 100%, 94%)
+        ;
+        background-image: url(images/pattern-background-desktop.svg);
+        background-size: contain;
+        height: 80vh;
+    }
+}
